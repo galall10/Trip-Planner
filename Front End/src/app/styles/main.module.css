@@ -1,0 +1,10 @@
+.container {
+    min-height: 100vh;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom,#0A2647, #144272,#205295,#2C74B3); /* Vertical gradient from top to bottom */
+    color: white;
+}

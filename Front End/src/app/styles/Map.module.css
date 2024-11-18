@@ -1,0 +1,32 @@
+/* Map.module.css */
+.mapContainer {
+  width: 80%;
+  height: 100%;
+  float: right;
+}
+
+.infoWindow {
+  max-width: 200px;
+  max-height: 250px;
+  /* padding: 10px; */
+  color: black;
+}
+
+.infoWindow img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.infoWindow h3 {
+  margin-top: 0;
+  font-size: 1.2em;
+  color: black;
+
+}
+
+.infoWindow p {
+  margin: 5px 0;
+  font-size: 0.9em;
+  color: black;
+
+}

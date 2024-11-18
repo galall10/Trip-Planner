@@ -1,0 +1,170 @@
+.container {
+    display: flex;
+    min-height: 100vh;
+    align-items: flex-start;
+    background: linear-gradient(to bottom,#0A2647, #144272,#205295,#2C74B3);    font-family: Arial, sans-serif;
+    padding-left: 270px; /* Adjusted to account for the sidebar */
+}
+
+.mainContent {
+    margin-top: 15px;
+    flex: 1;
+    padding: 40px; 
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    overflow-y: auto;
+    color: rgb(255, 255, 255); /* Ensure text is readable over the background image */
+}
+
+.title {
+    color: #EEEEEE;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    color: #EEEEEE;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.datesinput {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    font-size: 16px;
+    border: 1px solid #EEEEEE;
+    border-radius: 4px;
+    width: 100%;
+    color: black;
+
+}
+
+.destinationinput {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    color: black;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    width: 30%;
+}
+
+.addDestinationButton {
+    background: #dde6ed;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 15px 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    border: #EEEEEE;
+}
+
+.addDestinationButton:hover {
+    background: #0A2647;
+    color: white;
+}
+
+.error {
+    color: #ff4d4d;
+    margin-top: 10px;
+}
+
+.activityButton {
+    padding: 10px 15px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.selectedActivity {
+    background-color: #0A2647;
+    border-color: #ffffff;
+}
+
+.unselectedActivity {
+    background-color: #7e7e7e;
+    border-color: #ccc;
+}
+
+.actionButtons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.actionButton {
+    margin-top: 20px;
+    background: #dde6ed;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    border: #EEEEEE;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.actionButton:hover {
+    background: #0A2647;
+    color: white;
+}
+
+.destinationList {
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+.destinationItem {
+    background-color: #0A2647;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 11px;
+    border-color: white;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.removeButton {
+    background-color: #7c7c7c;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+
+.priceLevelContainer {
+    display: flex;
+    flex-direction: column; /* Change to column layout */
+    align-items: left; /* Center align items horizontally */
+    width: 100%;
+}
+
+.priceLabels {
+    display: flex;
+    justify-content: space-between;
+    color: #0A2647;
+    width: 25%; /* Full width for better alignment */
+}
+
+.priceSlider {
+    width: 25%; /* Full width to span the container */
+}
+
+.selectedPrice {
+    font-weight: bold;
+    color: #EEEEEE; /* Adjust the color as needed */
+    text-align: center; /* Center align text */
+}

@@ -1,0 +1,42 @@
+/* styles/Feed.module.css */
+
+.post {
+    background: #ffffff; /* Keeping it as white */
+    border-radius: 8px;
+    margin: 20px auto; /* Center the post horizontally */
+    padding: 20px;
+    max-width: 900px; /* Set a maximum width for the post */
+    width: 100%; /* Ensure it stretches to fit its container */
+    color: #3e3e3e; /* Changing text color to a darker shade */
+}
+
+.post img {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.tags {
+    margin-top: 10px;
+}
+
+.tag {
+    background: #3e3e3e;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 5px;
+    display: inline-block;
+    color: #ccc;
+}
+
+.tag:hover {
+    background: #555;
+    color: white;
+}

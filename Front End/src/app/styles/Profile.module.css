@@ -1,0 +1,363 @@
+.container {
+    display: flex;
+    min-height: 100vh;
+    background: white;
+    background: linear-gradient(to bottom,#0A2647, #144272,#205295,#2C74B3); /* Vertical gradient from top to bottom */
+}
+
+.sidebar {
+    width: 250px;
+    flex-shrink: 0;
+}
+
+.tab{
+    color:EEEEEE;
+}
+.profileContent {
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 280px;
+    background: linear-gradient(to bottom,#0A2647, #144272,#205295,#2C74B3); /* Vertical gradient from top to bottom */
+}
+
+.profileHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #EEEEEE;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profilePictureWrapper {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    max-width: 100px;
+}
+
+.profilePicture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    margin-top: -50px;
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.username {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0A2647;
+}
+
+.stats {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.stats span {
+    font-size: 14px;
+    color: #0A2647;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.actions button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.actions button:first-child {
+    background: #ff4d4d;
+    color: #fff;
+}
+
+.actions button:first-child:hover {
+    background: #e61313;
+}
+
+.actions button:last-child {
+    background: #0A2647;
+    color: #fff;
+}
+
+.actions button:last-child:hover {
+    background: #0A2647;
+}
+
+.tabSelector {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.tabSelector button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    transition: border-bottom 0.3s ease;
+    background: none;
+    color: #EEEEEE;
+}
+
+.tabSelector button:hover,
+.tabSelector button.activeTab {
+    border-bottom: 2px solid #fff;
+}
+
+.trips,
+.posts {
+    margin-top: 20px;
+    margin-left: 350px;
+}
+
+.sectionTitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fcfafa;
+    margin-bottom: 10px;
+}
+
+.trip,
+.post {
+    display: flex;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.tripImage,
+.postImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.tripDetails,
+.postDetails {
+    flex-grow: 1;
+}
+
+.tripName,
+.postName {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.tripLocation,
+.postLocation {
+    font-size: 14px;
+    color: #777;
+}
+
+.tripItinerary,
+.postItinerary {
+    font-size: 12px;
+    color: #999;
+}
+
+.largeProfilePicture {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.bio {
+    margin-top: 10px;
+    font-style: italic;
+    color: #000000; /* Text color for bio */
+    font-size: 16px; /* Font size for bio */
+    background-color: #dde6ed; /* Background color for bio */
+    padding: 10px; /* Padding around the bio */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 400px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 80%;
+    max-height: 80%;
+    overflow: auto;
+}
+
+.modalList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.modalListItem {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.modalListItem:last-child {
+    border-bottom: none;
+}
+
+.modalProfilePicture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.modalUserInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.modalUsername {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.modalFullName {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.traits {
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;    
+    width: 450px;
+    position: relative;
+    margin-left: 450px;
+    margin-top: -10px;
+    bottom: 80px;
+    gap: 10px; /* Space between trait boxes */
+}
+
+.trait-box {
+    background-color: #539261; /* Background color for trait box */
+    padding: 10px 15px; /* Padding around the trait box */
+    border-radius: 8px; /* Rounded corners for trait box */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for trait box */
+    font-size: 14px; /* Font size for trait text */
+    color: #000000; /* Text color for trait text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 80px; /* Minimum width for trait box */
+    max-width: 200px; /* Maximum width for trait box */
+    text-align: center; /* Center align the text inside the box */
+    flex: 1;
+}
+
+.trait-box span {
+    display: block;
+}
+
+.editbutton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+}
+
+.editbutton button {
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    background-color: #dde6ed;
+    color: #000000;
+}
+
+.editbutton button:hover {
+    background: #0A2647;
+   color: white;
+}
+
+.trips {
+    margin-top: 20px;
+  }
+  
+  .sectionTitle {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .trip {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .trip:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .tripDetails {
+    flex: 1;
+  }
+  
+  .tripName {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .tripDate {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 3px;
+  }
+  
+  .tripCity {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  

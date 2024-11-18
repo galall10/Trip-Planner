@@ -1,0 +1,141 @@
+.page {
+    background: linear-gradient(to bottom,#0A2647, #144272,#205295,#2C74B3); /* Vertical gradient from top to bottom */
+    min-height: 100vh; /* Ensures the background covers the entire page */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align the container at the top */
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    margin-top: 30px;
+    max-width: 600px;
+    padding: 20px;
+    background: white; /* Background is now white */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 250px; 
+}
+
+.title {
+    font-size: 24px;
+    color: black; /* Text is now black */
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.menu {
+    margin-bottom: 20px;
+}
+
+.menuButton {
+    background: white; /* Background is now white */
+    color: black; /* Text is now black */
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+}
+
+.menuButton:hover {
+    background: #f0f0f0; /* Gray hover effect */
+}
+
+.menuContent {
+    margin-top: 10px;
+    padding: 10px;
+    background: white; /* Background is now white */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.deleteButton {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left:165px;
+}
+
+.deleteButton:hover {
+    background: #e60000; /* Darker red on hover */
+   
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: black; /* Text is now black */
+    background: white; /* Background is now white */
+}
+
+.submitButton {
+  width: 300px;
+  margin-left:120px;
+  background: #dde6ed;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  padding: 15px 30px;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  border: #EEEEEE;
+}
+
+.submitButton:hover {
+    background: #0A2647;
+    color: white;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.success {
+    color: green;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.modalContent {
+    text-align: center;
+}
+
+.confirmButton {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.confirmButton:hover {
+    background: #e60000; /* Darker red on hover */
+}
+
+.cancelButton {
+    background: rgb(255, 255, 255); /* Background is now white */
+    color: black; /* Text is now black */
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.cancelButton:hover {
+    background: #f0f0f0; /* Gray hover effect */
+}

@@ -1,0 +1,82 @@
+/* styles/Home.module.css */
+.container {
+    min-height: 100vh;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom,#0A2647, #144272,#205295,#2C74B3); /* Vertical gradient from top to bottom */
+    color: black;
+}
+
+.logoContainer {
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 700px;
+    height: auto;
+}
+
+.main {
+    padding: 20px;
+    text-align: center;
+    border-radius: 0.3rem;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.createButton {
+    background: #dde6ed;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    border: #EEEEEE;
+}
+
+.createButton:hover {
+    background: #0A2647;
+    color: white;
+}
+
+.Agency a:hover {
+    text-decoration: underline;
+}
+
+.signInText {
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.signInText a {
+    background: #0A2647;
+   
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: underline;
+}
+
+.signInText a:hover {
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer {
+    color:#EEEEEE;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 0.3rem;
+}

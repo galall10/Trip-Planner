@@ -1,0 +1,116 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(to bottom,#0A2647, #144272,#205295,#2C74B3); /* Vertical gradient from top to bottom */
+  font-family: 'Arial', sans-serif;
+}
+
+.mainContent {
+  flex: 1;
+  padding: 150px;
+  background-color: transparent;
+  border-radius: 8px;
+  margin-left: 290px; /* Adjusted to account for the sidebar */
+  overflow-y: auto;
+}
+
+.title {
+  font-size: 2em;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 25px;
+  border-color: #000000;
+  box-shadow: 40px 40px 40px 40px rgba(0, 0, 0, 0.1);
+}
+
+.field {
+  margin-bottom: 20px;
+}
+
+.label {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.fileInput {
+  margin-left: 20px;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.fileInput:hover {
+  background-color: #f0f0f0;
+  border-color: #000000;
+}
+
+.previewContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.previewImage {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.2);
+}
+
+.textarea,
+.input {
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  color: #000000;
+  background-color: #ffffff;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.textarea:focus,
+.input:focus {
+  background-color: #ffffff;
+  border-color: #000000;
+  outline: none;
+}
+
+.textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.submitButton {
+  width: 300px;
+  margin-left:300px;
+  background: #dde6ed;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  padding: 15px 30px;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  border: #EEEEEE;
+}
+
+.submitButton:hover {
+  background: #0A2647;
+  color: white;
+}

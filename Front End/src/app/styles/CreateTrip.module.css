@@ -1,0 +1,183 @@
+.createTrip {
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(to bottom, #0A2647, #144272, #205295, #2C74B3);
+  font-family: Arial, sans-serif;
+}
+
+.itineraryContainer {
+  border-radius: 10px;
+  min-height: 100vh;
+  width: 40%;
+  padding: 20px;
+  overflow-y: auto;
+  background: linear-gradient(to bottom, #0A2647, #144272, #205295, #2C74B3);
+  font-family: Arial, sans-serif;
+  z-index: 1; /* Ensure the itinerary is above the map */
+}
+
+.mapContainer {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: linear-gradient(to bottom, #0A2647, #144272, #205295, #2C74B3);
+  font-family: Arial, sans-serif;
+}
+
+.dayDropdown {
+  margin-bottom: 10px;
+}
+
+.dayButton {
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  color: black;
+  background-color: #ffffff;
+  border: 1px solid black;
+  text-align: left;
+  cursor: pointer;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dayColorIndicator {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+.dayContent {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  color: black;
+}
+
+.dayHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.mainActivities {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.suggestedActivities {
+  display: flex;
+  overflow-x: auto;
+  padding: 10px 0;
+}
+
+.suggestedActivityBox {
+  min-width: 150px;
+  max-width: 150px;
+  padding: 10px;
+  margin: 0 10px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.suggestedActivityImage,
+.activityImage {
+  width: 100%;
+  height: auto;
+  max-width: 150px;
+}
+
+.activityBox {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.activityBox h3 {
+  margin: 0 0 5px;
+}
+
+.activityBox p {
+  margin: 0;
+}
+
+.dayColorIndicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 4px;
+}
+
+/* New Styles for Input Box, Save, and Cancel Buttons */
+.tripForm {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.tripNameInput {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cancelButton,
+.saveButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cancelButton {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+}
+
+.cancelButton:hover {
+  background-color: #ff3333;
+}
+
+.saveButton {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
+
+.saveButton:hover {
+  background-color: #45a049;
+}
+
+.saveButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
