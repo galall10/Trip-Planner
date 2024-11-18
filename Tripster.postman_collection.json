@@ -1,0 +1,1490 @@
+{
+	"info": {
+		"_postman_id": "10be76e3-1ea1-445e-a4bb-6db04621590d",
+		"name": "Tripster",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27558427"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "update user",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjdiZTcxMWY2M2E5ODE0NzA5MmY0NWYiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE3MTk1Nzg1OTksImV4cCI6MTcyMDE4MzM5OX0.smIS1HZSuts7Da3EQGwgOomJBsRXztHs2Eyba9uG1X4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"traits\":[\"Night Owl\", \"Adventurous\"],\r\n    \"username\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/v1/user/updateUser",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"updateUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get user",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Njg0MmFiY2QzMDgxYzdlZDBkNmNjMjAiLCJyb2xlIjoiVXNlciIsImlhdCI6MTcyMDI2OTIyNywiZXhwIjoxNzIwODc0MDI3fQ.tj3_OzmJDzy9EOZzSTLC2FYTxxhyDwueC136Z4pmIbQ",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/api/v1/user/getUser/6687b2b53b558520ecf73e5e",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"getUser",
+								"6687b2b53b558520ecf73e5e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete user",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjdlOWYwZTFiYzJmMzMzMzgwMDM4MTMiLCJyb2xlIjoiVXNlciIsImlhdCI6MTcxOTU3NDI4OCwiZXhwIjoxNzIwMTc5MDg4fQ.kh6GABb020PcttDzm5NCSZmq5v69vD74CCa9ofup5Uc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/api/v1/user/deleteUser",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"deleteUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "follow user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjgyYzU5MTA5YjIzMTBkOTBkZDEyZDkiLCJyb2xlIjoiVXNlciIsImlhdCI6MTcxOTg0NjI5MSwiZXhwIjoxNzIwNDUxMDkxfQ.cb9bMmSdVFCSOFQ2MQQhM7uj2CwXN18E5gyBeVDX_vo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"667ebf927cc06a67487a7a5d\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/v1/user/followUser",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"followUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjdiZTcxMWY2M2E5ODE0NzA5MmY0NWYiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE3MTk2NjYzNzAsImV4cCI6MTcyMDI3MTE3MH0.aHylrQoQRxxAIed3VTPTseYpYzPalp3DPNyB85TFGUo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/api/v1/user/searchUsers?query=john%20doe",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"searchUsers"
+							],
+							"query": [
+								{
+									"key": "query",
+									"value": "john%20doe"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get home page",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Njg3NDRlY2RiZDhiNDQwZmM4MzA2NDAiLCJyb2xlIjoiVXNlciIsImlhdCI6MTcyMDI2OTM0MSwiZXhwIjoxNzIwODc0MTQxfQ.-opyqGYQ-Z41XWBnD9qgU4O4XKJmryh83wFC4s7pqbk",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/api/v1/user/getHomePage",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"getHomePage"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\":\"panda\",\r\n    \"lastName\":\"panda\",\r\n    \"email\":\"tripster648@gmail.com\",\r\n    \"password\":\"Password123\",\r\n    \"username\":\"panda123\",\r\n    \"phoneNumber\":\"01234567890\",\r\n    \"gender\":\"Male\",\r\n    \"dateOfBirth\":\"2001-01-01\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/v1/auth/register",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"usernameOrEmail\":\"panda1234\",\r\n    \"password\":\"Password123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/v1/auth/login",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "verify email",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\":\"88a071cfb0804f8c7d233c24f1820c938f0597b7c898cc96229179aed5c7acc3db4190e67b148321\",\r\n    \"email\":\"tripster648@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/auth/verifyEmail/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"verifyEmail",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "change password",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjgzN2NjMzg0ODJkNzBhZmM5YjljNzQiLCJyb2xlIjoiVXNlciIsImlhdCI6MTcxOTg5MzE4OSwiZXhwIjoxNzIwNDk3OTg5fQ.xDWIPAQ-snkflWqUq1c1wUAHGrwYMNcNoXaIpMazfYo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"oldPassword\":\"Password12\",\r\n    \"newPassword\":\"Password123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/auth/changePassword",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"changePassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "forget password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"tripster648@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/auth/forgetPassword",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"forgetPassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reset password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\":\"6a6deb593df66dc1900ec63358cdeef5372800b4d90d011e168b02f32d977dbc912ddbf4d4db94190ad92f555e1324df962e91761a38dfbbcd9f5ec966c621ae496b9a21c73e\",\r\n    \"email\":\"tripster648@gmail.com\",\r\n    \"password\":\"Password123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/auth/resetPassword",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"resetPassword"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Trip",
+			"item": [
+				{
+					"name": "create trip",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjhlNTkzNjU0MzYxOTNjMGNjMTdhM2YiLCJyb2xlIjoiVXNlciIsImlhdCI6MTcyMDYwNDk4NSwiZXhwIjoxNzIxMjA5Nzg1fQ.HYNXFAE3Mn-g-bwDlaSNB6P82GD5tnsz5Tks2bWVqa4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "itinerary",
+									"value": "{\n  \"Day 1\": [\n    {\n      \"cluster\": 0,\n      \"geometry\": {\n        \"location\": {\n          \"lat\": 30.0483167,\n          \"lng\": 31.2336674\n        },\n        \"viewport\": {\n          \"northeast\": {\n            \"lat\": 30.04911250000001,\n            \"lng\": 31.23501152989272\n          },\n          \"southwest\": {\n            \"lat\": 30.0459293,\n            \"lng\": 31.23231187010727\n          }\n        }\n      },\n      \"lat\": \"30.0483167\",\n      \"lng\": \"31.2336674\",\n      \"name\": \"The Egyptian Museum in Cairo\",\n      \"photos\": [\n        {\n          \"height\": 3024,\n          \"html_attributions\": [\n            \"<a href=\\\"https://maps.google.com/maps/contrib/111105769802826907619\\\">SAI NIKHIL BHEEMANATHINI</a>\"\n          ],\n          \"photo_reference\": \"AUc7tXWtlyempsBeL5K66AuFkZ13qlwE9ufvPLoLxzw0kAWxdt_sb5N7o8Drg0QzI904N5YUNFoWop8vGOLBKhobtCo4PYlLXUD36C_wqmkZnRJeCmfQZPJo8SDo9Lw8owugHdO_SuwOTIbwziWek_Zr73gMmsRCMRztYp8tWCzwx2ALzPKV\",\n          \"width\": 4032\n        }\n      ],\n      \"price_level\": \"\",\n      \"priority\": \"main\",\n      \"rating\": 4.5,\n      \"reference\": \"ChIJKfCtck2xWBQR5L_ttrv5OJo\",\n      \"type\": \"museum\",\n      \"types\": [\n        \"museum\",\n        \"point_of_interest\",\n        \"establishment\"\n      ],\n      \"user_ratings_total\": 53204,\n      \"vicinity\": \"El-Tahrir Square, Ismailia, Qasr El Nil\",\n      \"weighted_score\": 48.968584451441245\n    },\n    {\n      \"cluster\": 0,\n      \"geometry\": {\n        \"location\": {\n          \"lat\": 30.00841,\n          \"lng\": 31.248246\n        },\n        \"viewport\": {\n          \"northeast\": {\n            \"lat\": 30.00975982989272,\n            \"lng\": 31.24959582989272\n          },\n          \"southwest\": {\n            \"lat\": 30.00706017010728,\n            \"lng\": 31.24689617010728\n          }\n        }\n      },\n      \"lat\": \"30.00841\",\n      \"lng\": \"31.248246\",\n      \"name\": \"The National Museum of Egyptian Civilization\",\n      \"photos\": [\n        {\n          \"height\": 2268,\n          \"html_attributions\": [\n            \"<a href=\\\"https://maps.google.com/maps/contrib/117958323087900222846\\\">ahmad safavi</a>\"\n          ],\n          \"photo_reference\": \"AUc7tXVH4XFrg8P0KvtAofZoUTbnXafDg1yHTg67voOeuZ2Ug510WIbafZuOmaA_-JonMj-HllxsaGmdlamx7blmtDjIkqjbeSZlfvHEvjZlyoBDRvM1J9ZB5XgWlgqhGDQj0pcwjEe2aR7ohIyuTDh3SlIykNGxETlBX9muc0SAuTxggbF1\",\n          \"width\": 4032\n        }\n      ],\n      \"price_level\": \"\",\n      \"priority\": \"main\",\n      \"rating\": 4.7,\n      \"reference\": \"ChIJj57jY2hHWBQRXRSPb0RY4MI\",\n      \"type\": \"historical\",\n      \"types\": [\n        \"museum\",\n        \"tourist_attraction\",\n        \"point_of_interest\",\n        \"establishment\"\n      ],\n      \"user_ratings_total\": 22287,\n      \"vicinity\": \"Ein as Seirah, Old Cairo\",\n      \"weighted_score\": 47.05547737129206\n    },\n    {\n      \"cluster\": 0,\n      \"geometry\": {\n        \"location\": {\n          \"lat\": 30.00841,\n          \"lng\": 31.248246\n        },\n        \"viewport\": {\n          \"northeast\": {\n            \"lat\": 30.00975982989272,\n            \"lng\": 31.24959582989272\n          },\n          \"southwest\": {\n            \"lat\": 30.00706017010728,\n            \"lng\": 31.24689617010728\n          }\n        }\n      },\n      \"lat\": \"30.00841\",\n      \"lng\": \"31.248246\",\n      \"name\": \"The National Museum of Egyptian Civilization\",\n      \"photos\": [\n        {\n          \"height\": 1836,\n          \"html_attributions\": [\n            \"<a href=\\\"https://maps.google.com/maps/contrib/111269723667971534096\\\">Amr Hussein</a>\"\n          ],\n          \"photo_reference\": \"AUc7tXWwA9AxHe2BMSw7Q9IV_uWkdfDnAuk8SCWwjG34hpIaixeOlODLsR34SQsdDPE9IJb2dVBUjngxhXqbP5jY7hwuvH5KFjveq9CR7scSkwIJLT6_TONEc1u-7DkqHX9Cp7WUFmcY61fK6QqHl_uAY-XhcShdXYkiqkKNv14-aYhWj3G5\",\n          \"width\": 3264\n        }\n      ],\n      \"price_level\": \"\",\n      \"priority\": \"main\",\n      \"rating\": 4.7,\n      \"reference\": \"ChIJj57jY2hHWBQRXRSPb0RY4MI\",\n      \"type\": \"museum\",\n      \"types\": [\n        \"museum\",\n        \"tourist_attraction\",\n        \"point_of_interest\",\n        \"establishment\"\n      ],\n      \"user_ratings_total\": 22287,\n      \"vicinity\": \"Ein as Seirah, Old Cairo\",\n      \"weighted_score\": 47.05547737129206\n    },\n    {\n      \"cluster\": 0,\n      \"geometry\": {\n        \"location\": {\n          \"lat\": 30.047343,\n          \"lng\": 31.2370478\n        },\n        \"viewport\": {\n          \"northeast\": {\n            \"lat\": 30.04869282989271,\n            \"lng\": 31.23839762989272\n          },\n          \"southwest\": {\n            \"lat\": 30.04599317010727,\n            \"lng\": 31.23569797010728\n          }\n        }\n      },\n      \"lat\": \"30.047343\",\n      \"lng\": \"31.2370478\",\n      \"name\": \"LE Grillon Restaurant & Garden Cafe\",\n      \"photos\": [\n        {\n          \"height\": 4000,\n          \"html_attributions\": [\n            \"<a href=\\\"https://maps.google.com/maps/contrib/105777699614733135637\\\">A Google User</a>\"\n          ],\n          \"photo_reference\": \"AUc7tXXt-t26IStLtRrg2ZHaATqayoIsc3xqX-p2C0U__bI0zHoTnuXVYCto-WGzGKK1M23ihePuxkfflb_WW4xkrzvQbXQphJCAuR-L28c4FM2yG_O8sbgPgV87b-48QZ3J_OxR8jUO7-AhFoG4RClG40CN9tIDznAuRHEytNz5zEBDJast\",\n          \"width\": 6000\n        }\n      ],\n      \"price_level\": 2.0,\n      \"priority\": \"main\",\n      \"rating\": 4.0,\n      \"reference\": \"ChIJnQo4x89AWBQRiZmGrvOQC-g\",\n      \"type\": \"restaurant\",\n      \"types\": [\n        \"restaurant\",\n        \"food\",\n        \"point_of_interest\",\n        \"establishment\"\n      ],\n      \"user_ratings_total\": 926,\n      \"vicinity\": \"8 Kasr Al Nile Beside Egyptian Museum & Steigenberger Hotel, El Tahrir\",\n      \"weighted_score\": 27.32781426226342\n    },\n    {\n      \"cluster\": 0,\n      \"geometry\": {\n        \"location\": {\n          \"lat\": 30.0703436,\n          \"lng\": 31.2188779\n        },\n        \"viewport\": {\n          \"northeast\": {\n            \"lat\": 30.07162327989272,\n            \"lng\": 31.22032282989272\n          },\n          \"southwest\": {\n            \"lat\": 30.06892362010727,\n            \"lng\": 31.21762317010728\n          }\n        }\n      },\n      \"lat\": \"30.0703436\",\n      \"lng\": \"31.2188779\",\n      \"name\": \"Abou al Zouz Restaurant - \\u0645\\u0637\\u0639\\u0645 \\u0627\\u0628\\u0648 \\u0627\\u0644\\u0632\\u0648\\u0632\",\n      \"photos\": [\n        {\n          \"height\": 2870,\n          \"html_attributions\": [\n            \"<a href=\\\"https://maps.google.com/maps/contrib/111789280304069598431\\\">Otour El Gressi</a>\"\n          ],\n          \"photo_reference\": \"AUc7tXUnzo0mv2vqAwhRzu-uOGwT0n8iC4qHaRDx9WVSYM671CX8jeu7wvlTkmwGkDzu2vIp9UshzjXpVuZVmZyUuO1G-skVSzW97ByiRijPNIh6Mawf6OeMXYaZ3KfGzHICBN39J_9x8y6w9zMXmgEC0Sq_v2jJfzcKFjKVhf2GLqadAksB\",\n          \"width\": 3996\n        }\n      ],\n      \"price_level\": 2.0,\n      \"priority\": \"suggested\",\n      \"rating\": 4.6,\n      \"reference\": \"ChIJeY2D6mxBWBQROeKVLb4f7Hg\",\n      \"type\": \"restaurant\",\n      \"types\": [\n        \"restaurant\",\n        \"food\",\n        \"point_of_interest\",\n        \"establishment\"\n      ],\n      \"user_ratings_total\": 3440,\n      \"vicinity\": \"33 Abou El Feda, St, Zamalek\",\n      \"weighted_score\": 37.46018006666841\n    },\n    {\n      \"cluster\": 0,\n      \"geometry\": {\n        \"location\": {\n          \"lat\": 30.0081493,\n          \"lng\": 31.2482604\n        },\n        \"viewport\": {\n          \"northeast\": {\n            \"lat\": 30.00949912989272,\n            \"lng\": 31.24961022989272\n          },\n          \"southwest\": {\n            \"lat\": 30.00679947010728,\n            \"lng\": 31.24691057010728\n          }\n        }\n      },\n      \"lat\": \"30.0081493\",\n      \"lng\": \"31.2482604\",\n      \"name\": \"The Royal Mummies Hall\",\n      \"photos\": [\n        {\n          \"height\": 3159,\n          \"html_attributions\": [\n            \"<a href=\\\"https://maps.google.com/maps/contrib/112797149732617768918\\\">Yes Visit Egypt</a>\"\n          ],\n          \"photo_reference\": \"AUc7tXWPwpP7Xka0r4FBRWD8mMi7X_76qRzQAeZJ_XoD5Yg-s3aj1gS0rTytCMCq9b5BRkFE1Rmpmvcpg6skKkLHlYLiZZiiwXWjMPAZrpTaCaOj1VR1VgwVyY6u1GAbV8vrhg-arux02FwSvRoLMsYTgFM_iqLvHXd0xHve5bejemS_xL6x\",\n          \"width\": 4869\n        }\n      ],\n      \"price_level\": \"\",\n      \"priority\": \"suggested\",\n      \"rating\": 4.7,\n      \"reference\": \"ChIJwfMAJMRAWBQRurLp9rrfWKQ\",\n      \"type\": \"museum\",\n      \"types\": [\n        \"museum\",\n        \"tourist_attraction\",\n        \"point_of_interest\",\n        \"establishment\"\n      ],\n      \"user_ratings_total\": 1387,\n      \"vicinity\": \"The national museum of Egyptian Civilization, Ad Deyorah, Old Cairo\",\n      \"weighted_score\": 34.00740996301373\n    },\n    {\n      \"cluster\": 0,\n      \"geometry\": {\n        \"location\": {\n          \"lat\": 30.0459751,\n          \"lng\": 31.2242988\n        },\n        \"viewport\": {\n          \"northeast\": {\n            \"lat\": 30.04764017989272,\n            \"lng\": 31.22562137989272\n          },\n          \"southwest\": {\n            \"lat\": 30.04494052010728,\n            \"lng\": 31.22292172010728\n          }\n        }\n      },\n      \"lat\": \"30.0459751\",\n      \"lng\": \"31.2242988\",\n      \"name\": \"Cairo Tower\",\n      \"photos\": [\n        {\n          \"height\": 720,\n          \"html_attributions\": [\n            \"<a href=\\\"https://maps.google.com/maps/contrib/115410551055603151349\\\">mike yiin</a>\"\n          ],\n          \"photo_reference\": \"AUc7tXWqcIIcshDIT5oURuY1Kv0Rb131X0IL9_ETpHMK2I4pIXhqURq93-OlarAjRbKABLmF_S72zwjrwSi7KQNJhKEt1iez-nTeKB9uuJwqkojGyJodN5MvttO3g-nezDjpmfBtUC-_VGjCvoyRB2aA4mPAWS3FHSu7omgml8LiafGNCVsl\",\n          \"width\": 960\n        }\n      ],\n      \"price_level\": \"\",\n      \"priority\": \"suggested\",\n      \"rating\": 4.3,\n      \"reference\": \"ChIJpVgdqJpAWBQR_tZY0ny_5mw\",\n      \"type\": \"historical\",\n      \"types\": [\n        \"tourist_attraction\",\n        \"museum\",\n        \"food\",\n        \"point_of_interest\",\n        \"store\",\n        \"establishment\"\n      ],\n      \"user_ratings_total\": 25150,\n      \"vicinity\": \"Kasr Al Nile, Zamalek\",\n      \"weighted_score\": 43.570407625525974\n    },\n    {\n      \"cluster\": 0,\n      \"geometry\": {\n        \"location\": {\n          \"lat\": 30.0610822,\n          \"lng\": 31.2193119\n        },\n        \"viewport\": {\n          \"northeast\": {\n            \"lat\": 30.06243467989272,\n            \"lng\": 31.22066272989272\n          },\n          \"southwest\": {\n            \"lat\": 30.05973502010728,\n            \"lng\": 31.21796307010727\n          }\n        }\n      },\n      \"lat\": \"30.0610822\",\n      \"lng\": \"31.2193119\",\n      \"name\": \"Z\\u00f6\\u00f6ba\",\n      \"photos\": [\n        {\n          \"height\": 4000,\n          \"html_attributions\": [\n            \"<a href=\\\"https://maps.google.com/maps/contrib/103244651975281650934\\\">h Bh</a>\"\n          ],\n          \"photo_reference\": \"AUc7tXXAJCewMhaq5mES4HIP541nq-6wxSw6oQNCL4RO3aua_GQAxb1P9z-5oo1Rw0J8vbBMwtjkLMvEWVm2XQSqZYYGgLQUzLM7YjLFuWGUpKjLxeaB4-sYpP3FWc0d7aIQKU-O1jlUZIeEXAH50JV8roS-zvz04IhnTVmt9QnGAfXdTw4i\",\n          \"width\": 3000\n        }\n      ],\n      \"price_level\": 2.0,\n      \"priority\": \"suggested\",\n      \"rating\": 4.2,\n      \"reference\": \"ChIJ1QVQreFAWBQRpvyKGd13Dmg\",\n      \"type\": \"restaurant\",\n      \"types\": [\n        \"restaurant\",\n        \"food\",\n        \"point_of_interest\",\n        \"establishment\"\n      ],\n      \"user_ratings_total\": 4968,\n      \"vicinity\": \"16 26 July St, Al Gabalayah, Zamalek\",\n      \"weighted_score\": 35.74609034472975\n    },\n    {\n      \"cluster\": 0,\n      \"geometry\": {\n        \"location\": {\n          \"lat\": 30.0057645,\n          \"lng\": 31.2303972\n        },\n        \"viewport\": {\n          \"northeast\": {\n            \"lat\": 30.00717217989272,\n            \"lng\": 31.23137882989272\n          },\n          \"southwest\": {\n            \"lat\": 30.00447252010727,\n            \"lng\": 31.22867917010728\n          }\n        }\n      },\n      \"lat\": \"30.0057645\",\n      \"lng\": \"31.2303972\",\n      \"name\": \"The Coptic Museum\",\n      \"photos\": [\n        {\n          \"height\": 525,\n          \"html_attributions\": [\n            \"<a href=\\\"https://maps.google.com/maps/contrib/101306118677561131267\\\">Hridoy AhMedh</a>\"\n          ],\n          \"photo_reference\": \"AUc7tXWfNqVByctIbJ4ojgMdFlfW0eF54O3qD7crkqF35ohWjL7n9L-garlS3lROVem2KEBqqLRXsEfN6QD12F1Da0Cvq1WCZRGafieO0kRhXen3-s3QjrbUFqP_hFeWnO4eGH_6a7KWR5-puRcSaBIXiMsq-lQuPUHgS5g6ERxK9y8ATsMj\",\n          \"width\": 742\n        }\n      ],\n      \"price_level\": \"\",\n      \"priority\": \"suggested\",\n      \"rating\": 4.5,\n      \"reference\": \"ChIJXUJDVhBHWBQRGhaSpp8pe1w\",\n      \"type\": \"museum\",\n      \"types\": [\n        \"museum\",\n        \"tourist_attraction\",\n        \"point_of_interest\",\n        \"establishment\"\n      ],\n      \"user_ratings_total\": 1150,\n      \"vicinity\": \"3 Mari Gerges, Kom Ghorab, Old Cairo\",\n      \"weighted_score\": 31.717738839248472\n    },\n    {\n      \"cluster\": 0,\n      \"geometry\": {\n        \"location\": {\n          \"lat\": 29.9973207,\n          \"lng\": 31.2147781\n        },\n        \"viewport\": {\n          \"northeast\": {\n            \"lat\": 29.99871942989272,\n            \"lng\": 31.21607407989272\n          },\n          \"southwest\": {\n            \"lat\": 29.99601977010728,\n            \"lng\": 31.21337442010728\n          }\n        }\n      },\n      \"lat\": \"29.9973207\",\n      \"lng\": \"31.2147781\",\n      \"name\": \"Pharaonic Village\",\n      \"photos\": [\n        {\n          \"height\": 1365,\n          \"html_attributions\": [\n            \"<a href=\\\"https://maps.google.com/maps/contrib/111104254193826225106\\\">\\u0623\\u062d\\u0645\\u062f \\u0627\\u0644\\u063a\\u064a\\u0637\\u0627\\u0646\\u0649</a>\"\n          ],\n          \"photo_reference\": \"AUc7tXWOXQvw-dvXJv49ZCFdUdj8l1q__aZtwuhUw6qKNshoeceCQZu2P9XSCHyZHe5VJmuExjEHpDEkRtEa_h9hA7UhJ5sis8oT9t7U60lHyTBPGD8rZ0LdewAAyiiPG3AwqkiQrI32poiFH_OlQzolic8AG-8X59BHeKL_Q9xJxEfpqlYx\",\n          \"width\": 2048\n        }\n      ],\n      \"price_level\": \"\",\n      \"priority\": \"suggested\",\n      \"rating\": 4.3,\n      \"reference\": \"ChIJowc3iv9GWBQRErTe7DKCZQU\",\n      \"type\": \"historical\",\n      \"types\": [\n        \"tourist_attraction\",\n        \"point_of_interest\",\n        \"establishment\"\n      ],\n      \"user_ratings_total\": 15674,\n      \"vicinity\": \"3 Al Bahr Al Aazam, st, Al Giza\",\n      \"weighted_score\": 41.53723617165482\n    }\n  ],\n  \"Day 2\": [\n    {\n      \"cluster\": 1,\n      \"geometry\": {\n        \"location\": {\n          \"lat\": 29.9946422,\n          \"lng\": 31.1228099\n        },\n        \"viewport\": {\n          \"northeast\": {\n            \"lat\": 29.99600702989272,\n            \"lng\": 31.12417662989273\n          },\n          \"southwest\": {\n            \"lat\": 29.99330737010728,\n            \"lng\": 31.12147697010728\n          }\n        }\n      },\n      \"lat\": \"29.9946422\",\n      \"lng\": \"31.1228099\",\n      \"name\": \"The Grand Egyptian Museum GEM\",\n      \"photos\": [\n        {\n          \"height\": 946,\n          \"html_attributions\": [\n            \"<a href=\\\"https://maps.google.com/maps/contrib/117032704375147975564\\\">A Google User</a>\"\n          ],\n          \"photo_reference\": \"AUc7tXXrJ43E4sRLOC9dDA7fNltYqHh6nXhU6V2ibVq3rq8h_8YHLgesCLeiEj-cKkUNTbCD_bRTpHW9fVpqexhJ_1RI5vLbg-DCMd9egmOvV_0DFtMI1jlHx0vRFA0ovdWbw7mIBvi5oef4oO4b850J9RFV2uy6vzt_5XBT1KiVQxDqkP0X\",\n          \"width\": 1417\n        }\n      ],\n      \"price_level\": \"\",\n      \"priority\": \"main\",\n      \"rating\": 4.4,\n      \"reference\": \"ChIJ0YpKmDRFWBQRGibsxFtMdkU\",\n      \"type\": \"museum\",\n      \"types\": [\n        \"museum\",\n        \"point_of_interest\",\n        \"establishment\"\n      ],\n      \"user_ratings_total\": 4869,\n      \"vicinity\": \"X4VF+V38, Cairo - Alexandria Desert Rd, Kafr Nassar, Al Haram\",\n      \"weighted_score\": 37.359736550737196\n    },\n    {\n      \"cluster\": 1,\n      \"geometry\": {\n        \"location\": {\n          \"lat\": 29.9772962,\n          \"lng\": 31.1324955\n        },\n        \"viewport\": {\n          \"northeast\": {\n            \"lat\": 29.98526945,\n            \"lng\": 31.137675\n          },\n          \"southwest\": {\n            \"lat\": 29.97375005,\n            \"lng\": 31.130769\n          }\n        }\n      },\n      \"lat\": \"29.9772962\",\n      \"lng\": \"31.1324955\",\n      \"name\": \"Giza Necropolis\",\n      \"photos\": [\n        {\n          \"height\": 749,\n          \"html_attributions\": [\n            \"<a href=\\\"https://maps.google.com/maps/contrib/101660490098893824250\\\">DIMAtey Daribayev</a>\"\n          ],\n          \"photo_reference\": \"AUc7tXWwchXcgrOTUCMExRcnGotOYM4wMjWbRtIGAHTyumOCV_jTLS1cX_Y8BmlaRO1tX1h93pz9QKutoiTqIoiuVX_T2_f-LzUiyGczN1E3bq6b9IHy6X6U3w0l2E0ndl-xHk2eHF5G31JGJpt-HTYoE7ZZgpt5htLBae0BF00x4rL8dIY\",\n          \"width\": 1140\n        }\n      ],\n      \"price_level\": \"\",\n      \"priority\": \"main\",\n      \"rating\": 4.6,\n      \"reference\": \"ChIJzbs54n1PWBQRizZuWjV0dMo\",\n      \"type\": \"historical\",\n      \"types\": [\n        \"tourist_attraction\",\n        \"museum\",\n        \"point_of_interest\",\n        \"establishment\"\n      ],\n      \"user_ratings_total\": 93849,\n      \"vicinity\": \"Al Haram\",\n      \"weighted_score\": 52.66748399326741\n    },\n    {\n      \"cluster\": 1,\n      \"geometry\": {\n        \"location\": {\n          \"lat\": 29.9800578,\n          \"lng\": 31.1433097\n        },\n        \"viewport\": {\n          \"northeast\": {\n            \"lat\": 29.98134477989272,\n            \"lng\": 31.14465752989272\n          },\n          \"southwest\": {\n            \"lat\": 29.97864512010728,\n            \"lng\": 31.14195787010728\n          }\n        }\n      },\n      \"lat\": \"29.9800578\",\n      \"lng\": \"31.1433097\",\n      \"name\": \"Pharaonic Papyrus Museum\",\n      \"photos\": [\n        {\n          \"height\": 2988,\n          \"html_attributions\": [\n            \"<a href=\\\"https://maps.google.com/maps/contrib/117301665922846038297\\\">Markus Kersting</a>\"\n          ],\n          \"photo_reference\": \"AUc7tXXnQFIqrJGtnexC6DStrMM-eD1u4HNtC4PVkTtcZFd2rAQk6j6ww2IKrmPIslKoqNU23WOruWlKRnDhW_5Mh92kTnDZEBL-uPFTIdsGfbV-iOLuOlr6vDfeNmn36z2ISYEjZeXIfO5YZqW_4Nbtn_Gfw-7kvfFMLuNnYCIRLZXY5UOd\",\n          \"width\": 5312\n        }\n      ],\n      \"price_level\": \"\",\n      \"priority\": \"main\",\n      \"rating\": 4.3,\n      \"reference\": \"ChIJRdV5SW5FWBQRQiBoKHDkX9Q\",\n      \"type\": \"museum\",\n      \"types\": [\n        \"museum\",\n        \"point_of_interest\",\n        \"establishment\"\n      ],\n      \"user_ratings_total\": 859,\n      \"vicinity\": \"Nazlet El-Semman, Al Haram\",\n      \"weighted_score\": 29.054809273764477\n    },\n    {\n      \"cluster\": 1,\n      \"geometry\": {\n        \"location\": {\n          \"lat\": 29.9759489,\n          \"lng\": 31.1443747\n        },\n        \"viewport\": {\n          \"northeast\": {\n            \"lat\": 29.97730632989272,\n            \"lng\": 31.14576847989271\n          },\n          \"southwest\": {\n            \"lat\": 29.97460667010728,\n            \"lng\": 31.14306882010727\n          }\n        }\n      },\n      \"lat\": \"29.9759489\",\n      \"lng\": \"31.1443747\",\n      \"name\": \"El Dar Darak\",\n      \"photos\": [\n        {\n          \"height\": 4032,\n          \"html_attributions\": [\n            \"<a href=\\\"https://maps.google.com/maps/contrib/113385283286016410166\\\">Masa Han</a>\"\n          ],\n          \"photo_reference\": \"AUc7tXVAYUhakSOLAemmKow-MvlI5hV2cdprVWYqqf5Ra3yQ7sl1zTFUCfJFliqUcFPQv6dK8VupFggPVYfF9-t99g5YLPWNLSilka5O_qYxn3fxPCyFuesrxI2RHaOpl-BY1F4rfZl6MBP0YebI90lW76ncg9-MzNc3k7xQH_K08fUrs2ug\",\n          \"width\": 3024\n        }\n      ],\n      \"price_level\": 2.0,\n      \"priority\": \"main\",\n      \"rating\": 4.4,\n      \"reference\": \"ChIJhbEET4pFWBQRNZRSANvUUkQ\",\n      \"type\": \"restaurant\",\n      \"types\": [\n        \"restaurant\",\n        \"food\",\n        \"point_of_interest\",\n        \"establishment\"\n      ],\n      \"user_ratings_total\": 1007,\n      \"vicinity\": \"Nazlet Al Seman Al Westani, Nazlet El-Semman, Al Haram\",\n      \"weighted_score\": 30.429183173977783\n    },\n    {\n      \"cluster\": 1,\n      \"geometry\": {\n        \"location\": {\n          \"lat\": 29.9747367,\n          \"lng\": 31.1383572\n        },\n        \"viewport\": {\n          \"northeast\": {\n            \"lat\": 29.97659602989272,\n            \"lng\": 31.13973857989272\n          },\n          \"southwest\": {\n            \"lat\": 29.97389637010728,\n            \"lng\": 31.13703892010728\n          }\n        }\n      },\n      \"lat\": \"29.9747367\",\n      \"lng\": \"31.1383572\",\n      \"name\": \"Valley Temple of Khafre\",\n      \"photos\": [\n        {\n          \"height\": 3024,\n          \"html_attributions\": [\n            \"<a href=\\\"https://maps.google.com/maps/contrib/102232959164895741174\\\">Aier Morcelli</a>\"\n          ],\n          \"photo_reference\": \"AUc7tXXdHJK7mcdekq9MqdJvJ7BlDg_sBUfVmcaz53h2tY-fmsAaJVSy5a4DFMDqwq4k1r2DL5_GaJW4uD_MsEfpp7S9tr3ShUI4SrITu8AA0-APgRLIowbFgZBSpLlzSpPTahpNJB6YzyUKgHH2AYGCMH5TkAsFPgu02JofJleK-gIxB6yp\",\n          \"width\": 4032\n        }\n      ],\n      \"price_level\": \"\",\n      \"priority\": \"suggested\",\n      \"rating\": 4.7,\n      \"reference\": \"ChIJO-mLlmJPWBQRG6X8G_bUZf8\",\n      \"type\": \"historical\",\n      \"types\": [\n        \"tourist_attraction\",\n        \"point_of_interest\",\n        \"establishment\"\n      ],\n      \"user_ratings_total\": 412,\n      \"vicinity\": \"X4FQ+V8X, Al Haram\",\n      \"weighted_score\": 28.310203686916857\n    },\n    {\n      \"cluster\": 1,\n      \"geometry\": {\n        \"location\": {\n          \"lat\": 29.9976531,\n          \"lng\": 31.1218976\n        },\n        \"viewport\": {\n          \"northeast\": {\n            \"lat\": 29.99900897989272,\n            \"lng\": 31.12325062989272\n          },\n          \"southwest\": {\n            \"lat\": 29.99630932010728,\n            \"lng\": 31.12055097010728\n          }\n        }\n      },\n      \"lat\": \"29.9976531\",\n      \"lng\": \"31.1218976\",\n      \"name\": \"\\u0645\\u062a\\u062d\\u0641 \\u0645\\u062d\\u0645\\u062f \\u0646\\u0627\\u062c\\u0649\",\n      \"photos\": [\n        {\n          \"height\": 576,\n          \"html_attributions\": [\n            \"<a href=\\\"https://maps.google.com/maps/contrib/116470394274241414339\\\">Hesham Hussain</a>\"\n          ],\n          \"photo_reference\": \"AUc7tXWTAS9XK6T9KxmyZ6VI-ASiUYZehh_C90GguraCrDyM_dCoNcInbSoIaX7c_6TpTqNxIzdM7UXbetkUPU6WoJ79PNZ29ym8dp4ysNH3-8jmOgfzNm19FHA5o-k9dPpygq97x60wbhORyogCePK1H36M_C3jQkbaKKs2Qn1pueppaW_y\",\n          \"width\": 1280\n        }\n      ],\n      \"price_level\": \"\",\n      \"priority\": \"suggested\",\n      \"rating\": 4.7,\n      \"reference\": \"ChIJo1MnhUBFWBQR0ZB8A_hP3z8\",\n      \"type\": \"museum\",\n      \"types\": [\n        \"museum\",\n        \"point_of_interest\",\n        \"establishment\"\n      ],\n      \"user_ratings_total\": 18,\n      \"vicinity\": \"X4XC+3Q6, \\u0634\\u064a\\u062a\\u0627 \\u0639\\u0637\\u0627\\u0637\\u064a\\u060c \\u0627\\u0644\\u0647\\u0631\\u0645\\u060c\\u060c, Kafr Nassar, Al Haram\",\n      \"weighted_score\": 13.838863202082269\n    },\n    {\n      \"cluster\": 1,\n      \"geometry\": {\n        \"location\": {\n          \"lat\": 29.9715717,\n          \"lng\": 31.1279886\n        },\n        \"viewport\": {\n          \"northeast\": {\n            \"lat\": 29.97461145,\n            \"lng\": 31.1289924\n          },\n          \"southwest\": {\n            \"lat\": 29.97055845,\n            \"lng\": 31.1249772\n          }\n        }\n      },\n      \"lat\": \"29.9715717\",\n      \"lng\": \"31.1279886\",\n      \"name\": \"Pyramids of Queens\",\n      \"photos\": [\n        {\n          \"height\": 651,\n          \"html_attributions\": [\n            \"<a href=\\\"https://maps.google.com/maps/contrib/101518064396182416591\\\">Frank Engel</a>\"\n          ],\n          \"photo_reference\": \"AUc7tXW-9_wyBaPYnFkuS-4U_ese1Xvp6On-WLVGUN0txGjL7yaeHDaZLGiJ1If6l3Rz3TUDU0ix7nupuHJEMeEBgUP4E-5mpB06p26fkPc-8bFlWhi4k7Et33--qBRuZqparp1VWYviuOdQFyClM5oW01tbbIQCslz7KuIaekXKkSzdnk3L\",\n          \"width\": 1000\n        }\n      ],\n      \"price_level\": \"\",\n      \"priority\": \"suggested\",\n      \"rating\": 4.6,\n      \"reference\": \"ChIJI2G64XhPWBQRPJSQnKpYhKY\",\n      \"type\": \"historical\",\n      \"types\": [\n        \"tourist_attraction\",\n        \"point_of_interest\",\n        \"establishment\"\n      ],\n      \"user_ratings_total\": 458,\n      \"vicinity\": \"X4CH+J5H, Al Haram\",\n      \"weighted_score\": 28.193630966278505\n    },\n    {\n      \"cluster\": 1,\n      \"geometry\": {\n        \"location\": {\n          \"lat\": 29.992648,\n          \"lng\": 31.11953979999999\n        },\n        \"viewport\": {\n          \"northeast\": {\n            \"lat\": 29.99346272989272,\n            \"lng\": 31.12023442989272\n          },\n          \"southwest\": {\n            \"lat\": 29.99076307010727,\n            \"lng\": 31.11753477010727\n          }\n        }\n      },\n      \"lat\": \"29.992648\",\n      \"lng\": \"31.11953979999999\",\n      \"name\": \"TUT Gallery\",\n      \"photos\": [\n        {\n          \"height\": 960,\n          \"html_attributions\": [\n            \"<a href=\\\"https://maps.google.com/maps/contrib/112576166820904509423\\\">belal abbouda</a>\"\n          ],\n          \"photo_reference\": \"AUc7tXVzzWja-w2lIg_DA7vGC8X6nez_tR1CiQe9reSgR1Uulm9P661xVYdQjPgtV-oh_g99tgGSuN0vaooUkDRLNHXZ4Sc181Q53PDoX1DqHentLWwzSvWdH8shcFxVOkbyjVYlI2-NU8OOUacX6E-nneI6UBGvLa4243Q8V2NHr6tJrzVC\",\n          \"width\": 960\n        }\n      ],\n      \"price_level\": \"\",\n      \"priority\": \"suggested\",\n      \"rating\": 3.9,\n      \"reference\": \"ChIJFW41vd9FWBQRMAuk_xu_6go\",\n      \"type\": \"museum\",\n      \"types\": [\n        \"museum\",\n        \"point_of_interest\",\n        \"establishment\"\n      ],\n      \"user_ratings_total\": 15,\n      \"vicinity\": \"X4V9+3R, Kafr Nassar, Al Haram\",\n      \"weighted_score\": 10.813096016735146\n    },\n    {\n      \"cluster\": 1,\n      \"geometry\": {\n        \"location\": {\n          \"lat\": 29.965538,\n          \"lng\": 31.1134117\n        },\n        \"viewport\": {\n          \"northeast\": {\n            \"lat\": 29.96687577989272,\n            \"lng\": 31.11480092989272\n          },\n          \"southwest\": {\n            \"lat\": 29.96417612010727,\n            \"lng\": 31.11210127010727\n          }\n        }\n      },\n      \"lat\": \"29.965538\",\n      \"lng\": \"31.1134117\",\n      \"name\": \"Pyramids Visitor Centre\",\n      \"photos\": [\n        {\n          \"height\": 1500,\n          \"html_attributions\": [\n            \"<a href=\\\"https://maps.google.com/maps/contrib/112007636752429202125\\\">Nourhan Salem</a>\"\n          ],\n          \"photo_reference\": \"AUc7tXXH0qC7G9rfOaA15sMiQDo8ajGHI_qhpFLtH-wr2iN-gzEMFVW5MpEorrAvuaik3qrY4vvRQvydkhnBYXNAg1p8m1loOOsYuuYEuNq7_fPkBFtP3vYL0bqFN_YxSX0CT4FmYG857ubpdy-xhO0Ua255hUmPVe37Zm1Ho6m10_MWEMGz\",\n          \"width\": 2000\n        }\n      ],\n      \"price_level\": \"\",\n      \"priority\": \"suggested\",\n      \"rating\": 4.6,\n      \"reference\": \"ChIJh5hK3_ZPWBQR50Q8-yBf3UQ\",\n      \"type\": \"historical\",\n      \"types\": [\n        \"tourist_attraction\",\n        \"point_of_interest\",\n        \"establishment\"\n      ],\n      \"user_ratings_total\": 93,\n      \"vicinity\": \"X487+696, Al Ahram, Al Haram\",\n      \"weighted_score\": 20.899155998442016\n    },\n    {\n      \"cluster\": 1,\n      \"geometry\": {\n        \"location\": {\n          \"lat\": 30.0111242,\n          \"lng\": 31.1580631\n        },\n        \"viewport\": {\n          \"northeast\": {\n            \"lat\": 30.01247817989272,\n            \"lng\": 31.15942512989273\n          },\n          \"southwest\": {\n            \"lat\": 30.00977852010728,\n            \"lng\": 31.15672547010728\n          }\n        }\n      },\n      \"lat\": \"30.0111242\",\n      \"lng\": \"31.1580631\",\n      \"name\": \"National Papyrus Museum\",\n      \"photos\": [\n        {\n          \"height\": 309,\n          \"html_attributions\": [\n            \"<a href=\\\"https://maps.google.com/maps/contrib/103949342357898431523\\\">Ebrahim Abdalla</a>\"\n          ],\n          \"photo_reference\": \"AUc7tXW7YnNOl3j6LRT2POCbdGPlXDcPtNYmmeZZvu4GDwL3qWLgWbkvFTR5uWNUNTEvN2CxD03rryutyGSXQxMrydUJTJndEkBQGQE3PZf7_kbygqB-TqazICzo4fF1Szwlc7o65uaU0xTWmhWkqSYICOmDlqmxG4lYOMue0EPxj-3YG2aS\",\n          \"width\": 550\n        }\n      ],\n      \"price_level\": \"\",\n      \"priority\": \"suggested\",\n      \"rating\": 4.4,\n      \"reference\": \"ChIJjWK1OM1FWBQRCd_7Q6JMj_Q\",\n      \"type\": \"museum\",\n      \"types\": [\n        \"museum\",\n        \"point_of_interest\",\n        \"establishment\"\n      ],\n      \"user_ratings_total\": 7,\n      \"vicinity\": \"\\u0634 \\u0632\\u063a\\u0644\\u0648\\u0644, Monshaat Al Bakari, Al Giza\",\n      \"weighted_score\": 9.149542783391277\n    }\n  ]\n}\n",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "test public 2",
+									"type": "text"
+								},
+								{
+									"key": "startDate",
+									"value": "2024-07-11",
+									"type": "text"
+								},
+								{
+									"key": "endDate",
+									"value": "2024-07-11",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "cairo",
+									"type": "text"
+								},
+								{
+									"key": "visibility",
+									"value": "Public",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:5000/api/v1/trip/createTrip",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"trip",
+								"createTrip"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete trip",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Njg3YjJiNTNiNTU4NTIwZWNmNzNlNWUiLCJyb2xlIjoiVXNlciIsImlhdCI6MTcyMDE2OTE0NCwiZXhwIjoxNzIwNzczOTQ0fQ.i5rcC_6EGnYxDr-pK5h5HGgEvwF9W_JO-Z8t5xFpE1k",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/api/v1/trip/deleteTrip/6687bda1744fba2a0866071a",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"trip",
+								"deleteTrip",
+								"6687bda1744fba2a0866071a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get trip",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjhlNGZiZDI2YWQ5NzE5ZDRjYTMxZmIiLCJyb2xlIjoiVXNlciIsImlhdCI6MTcyMDYwMjU2MCwiZXhwIjoxNzIxMjA3MzYwfQ.Lyx-fmDjSkfygIii_lrGSYIhEx6N81B3-M2a47E4LyI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/api/v1/trip/getTrip/668e4f6026ad9719d4ca31f4",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"trip",
+								"getTrip",
+								"668e4f6026ad9719d4ca31f4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all user trips",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjhlNGZiZDI2YWQ5NzE5ZDRjYTMxZmIiLCJyb2xlIjoiVXNlciIsImlhdCI6MTcyMDYwMjU2MCwiZXhwIjoxNzIxMjA3MzYwfQ.Lyx-fmDjSkfygIii_lrGSYIhEx6N81B3-M2a47E4LyI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/v1/trip/getAllUserTrips/668e59365436193c0cc17a3f",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"trip",
+								"getAllUserTrips",
+								"668e59365436193c0cc17a3f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "follow trip",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjhlNGZiZDI2YWQ5NzE5ZDRjYTMxZmIiLCJyb2xlIjoiVXNlciIsImlhdCI6MTcyMDYwNTEyMCwiZXhwIjoxNzIxMjA5OTIwfQ.YwdTDz-1M5gfS0pi6aXJ9vEe1eWGyjO84kR0WQhRA6s",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"668e5d26af2c3115d86a0478\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/v1/trip/followTrip",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"trip",
+								"followTrip"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get my trip",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjhlNTkzNjU0MzYxOTNjMGNjMTdhM2YiLCJyb2xlIjoiVXNlciIsImlhdCI6MTcyMDYwNDk4NSwiZXhwIjoxNzIxMjA5Nzg1fQ.HYNXFAE3Mn-g-bwDlaSNB6P82GD5tnsz5Tks2bWVqa4",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/api/v1/trip/getMyTrip/668e5c8c5132cd2780803d93",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"trip",
+								"getMyTrip",
+								"668e5c8c5132cd2780803d93"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all my trips",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjhlNTkzNjU0MzYxOTNjMGNjMTdhM2YiLCJyb2xlIjoiVXNlciIsImlhdCI6MTcyMDYwNDk4NSwiZXhwIjoxNzIxMjA5Nzg1fQ.HYNXFAE3Mn-g-bwDlaSNB6P82GD5tnsz5Tks2bWVqa4",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/api/v1/trip/getAllMyTrips",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"trip",
+								"getAllMyTrips"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "like trip",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjhlNGZiZDI2YWQ5NzE5ZDRjYTMxZmIiLCJyb2xlIjoiVXNlciIsImlhdCI6MTcyMDYwNTEyMCwiZXhwIjoxNzIxMjA5OTIwfQ.YwdTDz-1M5gfS0pi6aXJ9vEe1eWGyjO84kR0WQhRA6s",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"668e5d26af2c3115d86a0478\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/v1/trip/likeTrip",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"trip",
+								"likeTrip"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Post",
+			"item": [
+				{
+					"name": "create post",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Njg3YjJiNTNiNTU4NTIwZWNmNzNlNWUiLCJyb2xlIjoiVXNlciIsImlhdCI6MTcyMDIxODY5OCwiZXhwIjoxNzIwODIzNDk4fQ.Ql5rZWMCqKmqyetnsPRM8MTOahiCTtFaUqHcc8wB-lc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"caption\":\"kosm l delete 3mlto feha eh\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/v1/post/createPost",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"post",
+								"createPost"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add media to post",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjdiZTcxMWY2M2E5ODE0NzA5MmY0NWYiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE3MTk2NjYzNzAsImV4cCI6MTcyMDI3MTE3MH0.aHylrQoQRxxAIed3VTPTseYpYzPalp3DPNyB85TFGUo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "66800ff219e4234b045a7c81",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/D:/dank/436209509_1223748952337294_5813170697174883393_n.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:5000/api/v1/post/addMedia",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"post",
+								"addMedia"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all user posts",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Njg3YjJiNTNiNTU4NTIwZWNmNzNlNWUiLCJyb2xlIjoiVXNlciIsImlhdCI6MTcyMDIxODY5OCwiZXhwIjoxNzIwODIzNDk4fQ.Ql5rZWMCqKmqyetnsPRM8MTOahiCTtFaUqHcc8wB-lc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "localhost:5000/api/v1/post/getAllUserPosts/6687b2b53b558520ecf73e5e",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"post",
+								"getAllUserPosts",
+								"6687b2b53b558520ecf73e5e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get single user post",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjdiZTcxMWY2M2E5ODE0NzA5MmY0NWYiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE3MTk1NjY5NDYsImV4cCI6MTcyMDE3MTc0Nn0.B7EYfw7YE9M94ban-bpu978x3-zNbFw7Kiz_937BTmA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "localhost:5000/api/v1/post/getSingleUserPost/667be711f63a98147092f45f/667d74d39747ac26acc1f90f",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"post",
+								"getSingleUserPost",
+								"667be711f63a98147092f45f",
+								"667d74d39747ac26acc1f90f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete post",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Njg3NDRlY2RiZDhiNDQwZmM4MzA2NDAiLCJyb2xlIjoiVXNlciIsImlhdCI6MTcyMDIxOTAzOCwiZXhwIjoxNzIwODIzODM4fQ.OeeWmfzBBHz3szSlpY51R8WKHFiYpR28ArSyeBuKIAA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/v1/post/deletePost/6688763dd034234e688bb153",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"post",
+								"deletePost",
+								"6688763dd034234e688bb153"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update post",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjdiZTcxMWY2M2E5ODE0NzA5MmY0NWYiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE3MTk1Nzg1OTksImV4cCI6MTcyMDE4MzM5OX0.smIS1HZSuts7Da3EQGwgOomJBsRXztHs2Eyba9uG1X4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"caption\":\"hello3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/v1/post/updatePost/667eb6f0e225bf26182337a9",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"post",
+								"updatePost",
+								"667eb6f0e225bf26182337a9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "like post",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjdiZTcxMWY2M2E5ODE0NzA5MmY0NWYiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE3MTk2NTUxOTMsImV4cCI6MTcyMDI1OTk5M30.Z9mzvnjeizhrWUQPPt9mRzNLczHRH5VDpxHsMkKqqTs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"66800ff219e4234b045a7c81\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/v1/post/likePost",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"post",
+								"likePost"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Review",
+			"item": [
+				{
+					"name": "create review",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjhlNGZiZDI2YWQ5NzE5ZDRjYTMxZmIiLCJyb2xlIjoiVXNlciIsImlhdCI6MTcyMDYwNTEyMCwiZXhwIjoxNzIxMjA5OTIwfQ.YwdTDz-1M5gfS0pi6aXJ9vEe1eWGyjO84kR0WQhRA6s",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"66919f2a0b529d0eec07ea53\",\r\n    \"text\":\"test333\",\r\n    \"rating\":\"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/v1/review/createReview",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"review",
+								"createReview"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add media to review",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjdiZTcxMWY2M2E5ODE0NzA5MmY0NWYiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE3MTk2NTcyMDIsImV4cCI6MTcyMDI2MjAwMn0.wRZyl0PUqxOKKQnI_yfz8_zhK20py86hrKgBMBsOSCE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "667fe057dc327f42c8073ff8",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/D:/dank/426851737_122117651264187663_2859258905207519785_n.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:5000/api/v1/review/addMedia",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"review",
+								"addMedia"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all user reviews",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjdiZTcxMWY2M2E5ODE0NzA5MmY0NWYiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE3MTk2NTcyMDIsImV4cCI6MTcyMDI2MjAwMn0.wRZyl0PUqxOKKQnI_yfz8_zhK20py86hrKgBMBsOSCE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "localhost:5000/api/v1/review/getAllUserReviews/667be711f63a98147092f45f",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"review",
+								"getAllUserReviews",
+								"667be711f63a98147092f45f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get single user review",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjdiZTcxMWY2M2E5ODE0NzA5MmY0NWYiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE3MTk1NjY5NDYsImV4cCI6MTcyMDE3MTc0Nn0.B7EYfw7YE9M94ban-bpu978x3-zNbFw7Kiz_937BTmA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/v1/review/getSingleUserReview/667be711f63a98147092f45f/667fe057dc327f42c8073ff8",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"review",
+								"getSingleUserReview",
+								"667be711f63a98147092f45f",
+								"667fe057dc327f42c8073ff8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete review",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjdiZTcxMWY2M2E5ODE0NzA5MmY0NWYiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE3MTk2NTcyMDIsImV4cCI6MTcyMDI2MjAwMn0.wRZyl0PUqxOKKQnI_yfz8_zhK20py86hrKgBMBsOSCE",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/api/v1/review/deleteReview/667fe3ec38723d220814e658/667fe3ec38723d220814e658",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"review",
+								"deleteReview",
+								"667fe3ec38723d220814e658",
+								"667fe3ec38723d220814e658"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update review",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjdiZTcxMWY2M2E5ODE0NzA5MmY0NWYiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE3MTk2NTcyMDIsImV4cCI6MTcyMDI2MjAwMn0.wRZyl0PUqxOKKQnI_yfz8_zhK20py86hrKgBMBsOSCE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"text\":\"testtt\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/v1/review/updateReview/667fe057dc327f42c8073ff8",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"review",
+								"updateReview",
+								"667fe057dc327f42c8073ff8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "like review",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjdiZTcxMWY2M2E5ODE0NzA5MmY0NWYiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE3MTk2NTcyMDIsImV4cCI6MTcyMDI2MjAwMn0.wRZyl0PUqxOKKQnI_yfz8_zhK20py86hrKgBMBsOSCE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"667fe057dc327f42c8073ff8\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/v1/review/likeReview",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"review",
+								"likeReview"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comment",
+			"item": [
+				{
+					"name": "create post comment",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjgzZTc3NjliNmE1MDM4YjAyZTRlZDYiLCJyb2xlIjoiVXNlciIsImlhdCI6MTcxOTkyMzk2NCwiZXhwIjoxNzIwNTI4NzY0fQ.vi-SdJGPMw6Yoyi3TBxY5ewX-k5WN9hAa6OhihgKk5E",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"text\":\"test1\",\r\n    \"id\":\"668163ffa5f31a4828dc2f43\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/v1/comment/createPostComment",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"comment",
+								"createPostComment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create review comment",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjdiZTcxMWY2M2E5ODE0NzA5MmY0NWYiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE3MTk2NjYzNzAsImV4cCI6MTcyMDI3MTE3MH0.aHylrQoQRxxAIed3VTPTseYpYzPalp3DPNyB85TFGUo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"text\":\"hello2\",\r\n    \"id\":\"667fe057dc327f42c8073ff8\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/v1/comment/createReviewComment",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"comment",
+								"createReviewComment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create reply",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjdiZTcxMWY2M2E5ODE0NzA5MmY0NWYiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE3MTk2NjYzNzAsImV4cCI6MTcyMDI3MTE3MH0.aHylrQoQRxxAIed3VTPTseYpYzPalp3DPNyB85TFGUo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"text\":\"hello3\",\r\n    \"id\":\"668013364c1f061b10c914c1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/v1/comment/createReply",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"comment",
+								"createReply"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update comment",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjdiZTcxMWY2M2E5ODE0NzA5MmY0NWYiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE3MTk2NjYzNzAsImV4cCI6MTcyMDI3MTE3MH0.aHylrQoQRxxAIed3VTPTseYpYzPalp3DPNyB85TFGUo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"text\":\"hello1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/v1/comment/updateComment/6680080d8e529f1e94b3c25d",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"comment",
+								"updateComment",
+								"6680080d8e529f1e94b3c25d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get comment",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjdiZTcxMWY2M2E5ODE0NzA5MmY0NWYiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE3MTk2NjYzNzAsImV4cCI6MTcyMDI3MTE3MH0.aHylrQoQRxxAIed3VTPTseYpYzPalp3DPNyB85TFGUo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/v1/comment/getComment/668013364c1f061b10c914c1",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"comment",
+								"getComment",
+								"668013364c1f061b10c914c1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete post comment",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjdiZTcxMWY2M2E5ODE0NzA5MmY0NWYiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE3MTk2NjYzNzAsImV4cCI6MTcyMDI3MTE3MH0.aHylrQoQRxxAIed3VTPTseYpYzPalp3DPNyB85TFGUo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/api/v1/comment/deletePostComment/66800ff219e4234b045a7c81/6680120d44c1e8428829141f",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"comment",
+								"deletePostComment",
+								"66800ff219e4234b045a7c81",
+								"6680120d44c1e8428829141f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete review comment",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjdiZTcxMWY2M2E5ODE0NzA5MmY0NWYiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE3MTk2NjYzNzAsImV4cCI6MTcyMDI3MTE3MH0.aHylrQoQRxxAIed3VTPTseYpYzPalp3DPNyB85TFGUo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/api/v1/comment/deleteReviewComment/667fe057dc327f42c8073ff8/668013004c1f061b10c914bb",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"comment",
+								"deleteReviewComment",
+								"667fe057dc327f42c8073ff8",
+								"668013004c1f061b10c914bb"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete reply",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjdiZTcxMWY2M2E5ODE0NzA5MmY0NWYiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE3MTk2NjYzNzAsImV4cCI6MTcyMDI3MTE3MH0.aHylrQoQRxxAIed3VTPTseYpYzPalp3DPNyB85TFGUo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/api/v1/comment/deleteReply/668013364c1f061b10c914c1/6680135a4c1f061b10c914c5",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"comment",
+								"deleteReply",
+								"668013364c1f061b10c914c1",
+								"6680135a4c1f061b10c914c5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
